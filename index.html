@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Vladimir Verstoff - web development</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta name="description" content="Разработка веб-приложений и сайтов в Новосибирске">
+</head>
+<body id="js-bg-after-load">
+	<div class="container" id="js-show-after-load">
+		<div class="left">
+			<img src="img/logo.png" class="logo" alt="Verstoff">
+		</div>
+		<div class="right">
+			<div class="title">
+				Web Development
+			</div>
+			<a href="mailto:contact@verstoff.ru" class="email">contact<span>@</span>verstoff.ru</a>
+		</div>
+	</div>
+	<script>
+		window.onload = function(){
+			document.getElementById("js-bg-after-load").setAttribute("class", "bg");
+			var el = document.getElementById("js-show-after-load"),
+				oldClass = el.getAttribute("class");
+			el.setAttribute("class", oldClass+" showed");
+		};
+	</script>
+</body>
+</html>
