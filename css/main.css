@@ -8,6 +8,7 @@ html, body {
 
 body {
 	font-family: 'PT Sans', sans-serif;
+	min-width: 650px;
 }
 .bg {
 	background-color: #6ec5c2;
